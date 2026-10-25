@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>د. عمر أيمن سعد الدين - استشاري جراحة الذكورة والعقم</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --text: #334155;
+            --bg: #f8fafc;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        header {
+            background: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .hero .title-sub {
+            font-size: 18px;
+            color: #93c5fd;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .hero .title-desc {
+            font-size: 20px;
+            color: #f1f5f9;
+            font-weight: 600;
+            background: rgba(255,255,255,0.1);
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 { font-size: 28px; }
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 22px;
+            margin-bottom: 20px;
+            border-right: 4px solid var(--accent);
+            padding-right: 15px;
+        }
+
+        .article {
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .article:last-child {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .article h3 {
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .contact-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .phone-btn {
+            display: block;
+            background: white;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .phone-btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        .booking-btn {
+            display: block;
+            background: #10b981;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+            transition: 0.3s;
+        }
+
+        .booking-btn:hover {
+            background: #059669;
+        }
+
+        footer {
+            background: var(--primary);
+            color: #94a3b8;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">عيادة د. عمر أيمن</div>
+            <a href="#booking-section" style="background: var(--accent); color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-weight: 500;">احجز الآن</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>د. عمر أيمن سعد الدين</h1>
+        <div class="title-sub">مدرس جراحة الذكورة والعقم وتأخر الحمل - قصر العيني</div>
+        <div class="title-desc">استشاري جراحة الذكورة والعقم</div>
+    </section>
+
+    <div class="main-container">
+        <!-- المحتوى التثقيفي للمرضى -->
+        <main>
+            <div class="card">
+                <h2 class="section-title">دليل المريض التثقيفي</h2>
+                
+                <div class="article">
+                    <h3>تأخر الحمل وعقم الرجال</h3>
+                    <p>يعتبر تأخر الإنجاب مشكلة طبية شائعة يمكن التعامل معها بدقة عند تشخيص الأسباب العضوية أو الهرمونية مبكراً. الفحص الدقيق هو الخطوة الأولى نحو العلاج الصحيح.</p>
+                </div>
+
+                <div class="article">
+                    <h3>جراحات الذكورة الحديثة</h3>
+                    <p>الطب الحديث يتيح حلولاً جراحية دقيقة وآمنة للغاية باستخدام الميكروسكوب الجراحي لعلاج حالات الدوالي أو انسداد القنوات المنوية بأعلى نسب نجاح.</p>
+                </div>
+
+                <div class="article">
+                    <h3>نصائح عامة للحفاظ على الصحة الإنجابية</h3>
+                    <p>التغذية المتوازنة، تجنب التدخين، والابتعاد عن مصادر الحرارة العالية أو الضغوط النفسية المستمرة تلعب دوراً جوهرياً في تحسين الكفاءة الإنجابية.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- بيانات الاتصال والحجز -->
+        <aside id="booking-section">
+            <div class="contact-box">
+                <h3>للحجز والاستفسار</h3>
+                <p style="margin-bottom: 15px; font-size: 14px; color: #64748b;">اضغط على الرقم للاتصال المباشر:</p>
+                
+                <a href="tel:01011007554" class="phone-btn">📞 01011007554</a>
+                <a href="tel:01141511505" class="phone-btn">📞 01141511505</a>
+
+                <a href="#" class="booking-btn" onclick="alert('سيتم ربط هذا الزر ببوابة الدفع الحقيقية فور تفعيلها لاستلام رابط الكشف أونلاين.')">💳 حجز كشف أونلاين ودفع الكتروني</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © د. عمر أيمن سعد الدين. المنصة مشفرة بالكامل لضمان خصوصية المرضى.</p>
+    </footer>
+
+</body>
+</html>
